@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+</head>
+
+<body>
+  <header>
+    <div class="logo">
+      <img src="asset/logo.png" alt="Logo">
+    </div>
+    <nav class="navbar">
+      <ul>
+        <li>Domestic Tour</li>
+        <li>Foreign Tour</li>
+        <li>Service</li>
+      </ul>
+    </nav>
+  </header>
+  <br><br>
+  <div class="container">
+    <img src="asset/bg.png" alt="Rainbow" class="bg">
+    <img src="asset/cauvong.png" alt="Cau Vong" class="cauvong">
+    <img src="asset/bgduoi.png" alt="Background Below" class="bgduoi">
+    <div class="text-overlay">Outdoor cooking</div>
+    <div class="text-overlay2">Climbing</div>
+    <div class="text-overlay3">Skiing</div>
+  </div>
+  <h1 class="text-2xl font-bold mb-4 text-center mx-auto" style="font-family: 'Shrikhand', cursive;text-align: center;">
+    What do you need to prepare?</h1>
+  <br><br><br>
+  <div class="grid-container">
+    <div class="grid-row">
+      <!-- Khung 1 -->
+
+      <div class="item-wrapper">
+        <p class="item-text">Warm clothes</p>
+
+        <div class="item-box">
+          <img aria-hidden="true" alt="Warm clothes" src="/asset/ao.png" class="item-image" />
+        </div>
+        <div class="number-container has-line">
+          <span class="item-number">1</span>
+        </div>
+      </div>
+
+      <!-- Khung 2 -->
+      <div class="item-wrapper">
+        <p class="item-text">Personal belongings</p>
+
+        <div class="item-box">
+          <img aria-hidden="true" alt="Personal belongings" src="/asset/tui.png" class="item-image" />
+        </div>
+        <div class="number-container has-line">
+          <span class="item-number">2</span>
+        </div>
+      </div>
+
+      <!-- Khung 3 -->
+      <div class="item-wrapper">
+        <p class="item-text">Identification documents</p>
+
+        <div class="item-box">
+          <img aria-hidden="true" alt="Identification documents" src="/asset/id.png" class="item-image" />
+        </div>
+        <div class="number-container">
+          <span class="item-number">3</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="grid-row">
+      <!-- Khung 4 -->
+      <div class="item-wrapper">
+        <p class="item-text">Pre-booked tickets</p>
+
+        <div class="item-box">
+          <img aria-hidden="true" alt="Pre-booked tickets" src="/asset/ticket.png" class="item-image" />
+        </div>
+        <div class="number-container has-line">
+          <span class="item-number">4</span>
+        </div>
+      </div>
+
+      <!-- Khung 5 -->
+      <div class="item-wrapper">
+        <p class="item-text">Medicine</p>
+
+        <div class="item-box">
+          <img aria-hidden="true" alt="Medicine" src="/asset/thuoce.png" class="item-image" />
+        </div>
+        <div class="number-container">
+          <span class="item-number">5</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br><br><br>
+  <div class="form-container-wrapper">
+    <div class="form-container">
+      <img src="/asset/screen.webp" alt="Image">
+      <div class="form-content">
+        <h2 style="font-family: 'Shrikhand'; font-size:20px">Fill in Your Information Here</h2>
+        <form>
+          <div class="row">
+            <div style="flex: 1;">
+              <label for="fullname">Fullname:</label>
+              <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required>
+            </div>
+            <div style="flex: 1;">
+              <label for="phone">Phone Number:</label>
+              <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+            </div>
+          </div>
+
+          <label for="content">Content:</label>
+          <textarea id="content" name="content" placeholder="Write your message here" rows="3" required></textarea>
+          <br>
+          <button type="submit" style="text-align: center; margin: auto;">Send Message</button>
+        </form>
+      </div>
+    </div>
+
+
+
+
+  </div>
+  <br><br><br>
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="contact-info">
+        <h3>Contact:</h3>
+        <div class="contact-item">
+          <i class="fas fa-phone"></i>
+          <span>0378839877</span>
+        </div>
+        <div class="contact-item">
+          <i class="fas fa-envelope"></i>
+          <span>khanhhuyen1852004@gmail.com</span>
+        </div>
+        <div class="contact-item">
+          <i class="fas fa-location-dot"></i>
+          <span>68 Nguyen Chi Thanh, Dong Da, Hanoi</span>
+        </div>
+      </div>
+
+      <div class="search-container">
+        <button class="search-btn">
+          <i class="fas fa-search"></i>
+        </button>
+      </div>
+    </div>
+
+    <img src="./asset/ban5.png" alt="Footer Decoration" class="footer-image">
+  </footer>
+
+</body>
+
+</html>

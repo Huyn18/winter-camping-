@@ -1,0 +1,638 @@
+body {
+  background-color: #103D05;
+  /* Thay đổi màu nền */
+}
+
+.nui-1,
+.nui-1 * {
+  box-sizing: border-box;
+}
+
+.nui-1 {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  object-fit: cover;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #103D05;
+  /* Màu nền cho header */
+  border-bottom: 2px solid white;
+  /* Dòng kẻ trắng dưới header */
+}
+
+.logo img {
+  height: 50px;
+  /* Chiều cao logo */
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 40px;
+  /* Khoảng cách giữa các mục */
+  color: white;
+  /* Màu chữ trắng */
+}
+
+.navbar li {
+  cursor: pointer;
+  /* Thay đổi con trỏ khi hover */
+}
+
+.container {
+  position: relative;
+  /* Để các phần tử con có thể định vị tương đối */
+}
+
+.rainbow {
+  position: absolute;
+  /* Đặt hình ảnh cầu vòng ở vị trí tuyệt đối */
+  top: 0;
+  /* Đặt ở trên cùng */
+  left: 0;
+  /* Đặt ở bên trái */
+  width: 100%;
+  /* Chiếm toàn bộ chiều ngang */
+  height: 500px;
+  /* Giữ tỷ lệ hình ảnh */
+  z-index: -1;
+  /* Đặt z-index thấp hơn để nằm dưới ảnh nui */
+}
+
+.bg {
+  width: 100%;
+  /* Đặt chiều rộng thành 100% */
+  height: auto;
+  /* Đảm bảo chiều cao tự động */
+  position: absolute;
+  /* Đặt vị trí tuyệt đối để phủ lên toàn bộ trang */
+  top: 0;
+  /* Đặt vị trí từ trên cùng */
+  left: 0;
+  /* Đặt vị trí từ bên trái */
+  z-index: 1;
+  /* Đặt z-index cao hơn để nằm trên bgduoi */
+}
+
+.cauvong {
+  width: 100%;
+  /* Đặt chiều rộng thành 100% */
+  height: auto;
+  /* Đảm bảo chiều cao tự động */
+  position: absolute;
+  /* Đặt vị trí tuyệt đối để chồng lên bg */
+  top: -200px;
+  /* Đặt vị trí từ trên cùng */
+  left: 0;
+  /* Đặt vị trí từ bên trái */
+  z-index: -2;
+  /* Đặt z-index cao hơn để nằm trên bg */
+}
+
+.bgduoi {
+  width: 100%;
+  /* Đặt chiều rộng thành 100% */
+  height: auto;
+  /* Đảm bảo chiều cao tự động */
+  position: relative;
+  /* Đặt vị trí tương đối để nằm dưới bg */
+  top: 0;
+  /* Đặt vị trí từ trên cùng */
+  left: 0;
+  /* Đặt vị trí từ bên trái */
+  z-index: 0;
+  /* Đặt z-index thấp hơn để nằm dưới bg */
+  margin-top: 900px;
+  /* Điều chỉnh khoảng cách từ trên xuống để nằm dưới bg */
+}
+
+.text-overlay {
+  position: absolute;
+  /* Đặt vị trí tuyệt đối để chồng lên bgduoi */
+  top: 35%;
+  /* Đặt vị trí từ trên xuống giữa */
+  left: 75%;
+  /* Đặt vị trí từ bên trái giữa */
+  transform: translate(-50%, -50%);
+  /* Giúp căn giữa văn bản */
+  color: white;
+  /* Màu chữ */
+  font-size: 34px;
+  /* Kích thước chữ */
+  text-align: center;
+  /* Căn giữa văn bản */
+  z-index: 3;
+  /* Đặt z-index cao hơn để nằm trên bgduoi */
+  font-family: 'Shrikhand', cursive;
+  /* Sử dụng font chữ Shrikhand */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  /* Hiệu ứng bóng đổ */
+  border: 2px solid rgb(0, 0, 0);
+  /* Viền trắng xung quanh văn bản */
+  padding: 10px;
+  /* Khoảng cách giữa văn bản và viền */
+  border-radius: 5px;
+  /* Bo góc viền */
+}
+
+.text-overlay2 {
+  position: absolute;
+  /* Đặt vị trí tuyệt đối để chồng lên bgduoi */
+  top: 53%;
+  /* Đặt vị trí từ trên xuống giữa */
+  left: 35%;
+  /* Đặt vị trí từ bên trái giữa */
+  transform: translate(-50%, -50%);
+  /* Giúp căn giữa văn bản */
+  color: white;
+  /* Màu chữ */
+  font-size: 34px;
+  /* Kích thước chữ */
+  text-align: center;
+  /* Căn giữa văn bản */
+  z-index: 3;
+  /* Đặt z-index cao hơn để nằm trên bgduoi */
+  font-family: 'Shrikhand', cursive;
+  /* Sử dụng font chữ Shrikhand */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  /* Hiệu ứng bóng đổ */
+  border: 2px solid rgb(0, 0, 0);
+  /* Viền trắng xung quanh văn bản */
+  padding: 10px;
+  /* Khoảng cách giữa văn bản và viền */
+  border-radius: 5px;
+  /* Bo góc viền */
+}
+
+.text-overlay3 {
+  position: absolute;
+  /* Đặt vị trí tuyệt đối để chồng lên bgduoi */
+  top: 61%;
+  /* Đặt vị trí từ trên xuống giữa */
+  left: 75%;
+  /* Đặt vị trí từ bên trái giữa */
+  transform: translate(-50%, -50%);
+  /* Giúp căn giữa văn bản */
+  color: white;
+  /* Màu chữ */
+  font-size: 34px;
+  /* Kích thước chữ */
+  text-align: center;
+  /* Căn giữa văn bản */
+  z-index: 3;
+  /* Đặt z-index cao hơn để nằm trên bgduoi */
+  font-family: 'Shrikhand', cursive;
+  /* Sử dụng font chữ Shrikhand */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  /* Hiệu ứng bóng đổ */
+  border: 2px solid rgb(0, 0, 0);
+  /* Viền trắng xung quanh văn bản */
+  padding: 10px;
+  /* Khoảng cách giữa văn bản và viền */
+  border-radius: 5px;
+  /* Bo góc viền */
+}
+
+.bg-card {
+  background-color: #f9f9f9;
+  /* Màu nền cho các item */
+  border-radius: 0.5rem;
+  /* Bo góc */
+  padding: 1rem;
+  /* Khoảng cách bên trong */
+  transition: transform 0.2s;
+  /* Hiệu ứng chuyển động */
+  display: flex;
+  /* Sử dụng flexbox để căn giữa nội dung */
+  flex-direction: column;
+  /* Đặt chiều dọc cho nội dung */
+  align-items: center;
+  /* Căn giữa theo chiều ngang */
+}
+
+/* Hiệu ứng khi hover */
+.bg-card:hover {
+  transform: scale(1.05);
+  /* Phóng to khi hover */
+}
+
+/* Định nghĩa cho các nút số */
+.bg-secondary {
+  background-color: #D9D9D9;
+  /* Màu nền cho các nút số */
+  color: #000;
+  /* Màu chữ */
+  border-radius: 15px;
+  /* Bo góc */
+  width: 87px;
+  /* Chiều rộng */
+  height: 87px;
+  /* Chiều cao */
+  display: flex;
+  /* Sử dụng flexbox */
+  align-items: center;
+  /* Căn giữa theo chiều dọc */
+  justify-content: center;
+  /* Căn giữa theo chiều ngang */
+  flex-shrink: 0;
+  /* Không cho phép thu nhỏ */
+}
+
+/* Định nghĩa cho các chữ */
+.bg-primary {
+  background-color: #007bff;
+  /* Màu nền cho chữ */
+  color: white;
+  /* Màu chữ trắng */
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  /* Tạo lưới tự động */
+  gap: 16px;
+  /* Khoảng cách giữa các mục */
+  justify-items: center;
+  /* Căn giữa các mục theo chiều ngang */
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  /* Căn giữa theo chiều ngang */
+  align-items: center;
+  /* Căn giữa theo chiều dọc */
+}
+
+.bg-secondary {
+  width: 87px;
+  height: 87px;
+}
+
+.box {
+  position: relative;
+  width: 87px;
+  height: 87px;
+}
+
+.text-label {
+  position: absolute;
+  top: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.flex {
+  display: flex;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.relative {
+  position: relative;
+}
+
+.box {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.text-number {
+  margin-top: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+  text-align: center;
+}
+
+.grid-container {
+  text-align: center;
+}
+
+.grid-row {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.item-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 100px;
+}
+
+.item-box {
+  width: 100px;
+  height: 100px;
+  border-radius: 12px;
+  margin-bottom: 10px;
+  background-color: #f3f4f6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.item-image {
+  margin: auto;
+  width: 100%;
+}
+
+.number-container {
+  position: relative;
+  width: 30px;
+  height: 30px;
+  border: 2px solid #000;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 8px;
+}
+
+.number-container.has-line::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 30px;
+  width: 270px;
+  height: 2px;
+  background-color: #000;
+  transform: translateY(-50%);
+}
+
+.item-number {
+  font-size: 18px;
+  font-weight: bold;
+  color: #000;
+}
+
+.item-text {
+  margin-top: 8px;
+  font-size: 14px;
+  color: #DFE8F6;
+  width: 100%;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .grid-row {
+    flex-wrap: wrap;
+  }
+
+  .item-wrapper {
+    margin: 0 20px 30px 20px;
+  }
+
+  .number-container.has-line::after {
+    display: none;
+  }
+}
+
+.form-container-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.form-container {
+  display: flex;
+  width: 50%;
+  max-width: 800px;
+  border: 4px solid #ffd700;
+  border-radius: 25px;
+  overflow: hidden;
+  background-color: #fff;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s;
+}
+
+.form-container:hover {
+  transform: scale(1.03);
+}
+
+.form-container img {
+  width: 40%;
+  object-fit: cover;
+}
+
+.form-content {
+  width: 48%;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.form-content h2 {
+  margin-bottom: 20px;
+  font-size: 26px;
+  text-align: center;
+  color: #444;
+}
+
+.form-content label {
+  margin-bottom: 8px;
+  font-size: 14px;
+  color: #333;
+  font-weight: bold;
+}
+
+.form-content .row {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.form-content input,
+.form-content textarea {
+  padding: 12px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  font-size: 14px;
+  outline: none;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.form-content input:focus,
+.form-content textarea:focus {
+  border-color: #ffd700;
+  box-shadow: 0 0 5px rgba(255, 215, 0, 0.5);
+}
+
+.form-content textarea {
+  width: 100%;
+  resize: none;
+}
+
+.form-content button {
+  padding: 12px;
+  background-color: #ffd700;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #444;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.form-content button:hover {
+  background-color: #ffc107;
+  transform: translateY(-2px);
+}
+
+.form-content button:active {
+  transform: translateY(0);
+}
+
+.footer {
+  background-color: #01493A;
+  padding: 40px 0;
+  color: white;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contact-info {
+  flex: 1;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  font-size: 16px;
+}
+
+.contact-item i {
+  margin-right: 15px;
+  width: 20px;
+  text-align: center;
+}
+
+.search-container {
+  position: relative;
+  margin-left: 20px;
+}
+
+.search-btn {
+  background: none;
+  border: 2px solid white;
+  color: white;
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.search-btn:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.footer-image {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 200px;
+  height: auto;
+  opacity: 0.3;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .contact-item {
+    justify-content: center;
+  }
+
+  .search-container {
+    margin-top: 20px;
+    margin-left: 0;
+  }
+
+  .footer-image {
+    width: 150px;
+  }
+
+  .navbar ul {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .text-overlay,
+  .text-overlay2,
+  .text-overlay3 {
+    font-size: 24px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .form-container {
+    width: 90%;
+  }
+
+  .grid {
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  }
+
+  .item-wrapper {
+    margin: 0 10px;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact-item {
+    justify-content: center;
+  }
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
